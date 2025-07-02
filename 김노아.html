@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'S-CoreDream-3Light';
+            text-align: center;
+            background-color: rgb(55, 83, 73);
+        }
+
+        h1 {
+            height: 100px;
+            font-size: 50px;
+            line-height: 200px;
+            background-color: rgb(8, 65, 43);
+            color:#ffffff;
+        }
+
+        nav {
+            font-size: 20px;
+            padding: 20px 0;
+            background-color: rgb(8, 65, 43);
+        }
+
+        nav a {
+            margin: 20px 70px;
+            text-decoration: none;
+            color: #ffffff;
+            
+        }
+
+        .logo{
+            width: 100%;
+            height: 100px;
+            margin-right: 90%;
+            display: inline block;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 400px;
+            
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+            margin: 20px;
+        }
+
+         .section{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .box {
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin-left: 50px;
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 3px 6px rgb(255, 255, 255);
+        }
+
+        .boxImg {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .boxImg:hover{
+            scale: 1.1;
+        }
+        .box p{
+            margin: 5px;
+        }
+
+        button{
+            margin-top: 30px;
+            margin-left: 10px;
+            height: 30px;
+            width: 100px;
+            font-family: 'S-CoreDream-3Light';
+            background-color: rgb(23, 70, 37);
+            color: #ffffff;
+            border-radius: 10px;
+
+        }
+        button:hover{
+            color: rgb(23, 70, 37);
+            background-color: #fff;
+            scale: 1.3;
+            cursor: pointer;
+        }
+
+        
+
+        aside {
+            width: 450px;
+            background-color: rgb(55, 83, 73);
+            padding: 20px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        aside p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer {
+            height: 350px;
+            background-color: rgb(8, 65, 43);
+            color: white;
+        }
+
+       
+        .up{
+            padding: 20px;
+            display: flex;
+            margin: 100px;
+        }
+     
+
+        .up > ul {
+            margin-left: 270px;
+            margin-top: 100px;
+            text-align: center;
+
+        }
+
+       
+        footer a {
+        text-decoration: none;
+        color: rgb(255, 255, 255); 
+    }
+
+</style>
+<body>
+    <h1>BURGER & CHICKEN </h1>
+    <nav>
+        <a href="http://127.0.0.1:5500/DAY_0701/%EA%B9%80%EB%85%B8%EC%95%84.html" class="logo"><img src="/images/burger_1857924 (1).png" alt="" height="70px" width="70px"></a>
+        <a href="../DAY_0701/13_checkbox.html">HOME</a>
+        <a href="../DAY_0701/15_onchange.html">MENU</a>
+        <a href="../DAY_0701/14_slide.html">BOARD</a>
+        <a href="../DAY_0701/17_baduk.html">MYPAGE</a>
+    </nav>
+    <section class="banner">
+        <img src="/images/가로배너7.png" alt="" width="100%" height="200px">
+    </section>
+
+    <div class="main">
+        <section class="section">
+        <div class="box">
+            <img class="boxImg" src="/images/햄버거1.jpg" alt="">
+            <p><b>해쉬브라운 베이컨 버거</b></p>
+            <p>🍔단품 5500원</p>
+            <p>🍟세트 7500원~</p>
+            <button class="button1">장바구니 담기</button>
+            <button class="button2">자세히 보기</button>
+        </div>
+        <div class="box">
+            <img class="boxImg" src="/images/햄버거2.webp" alt="">
+            <p><b>불고기 와퍼</b></p>
+            <p>🍔단품 4500원</p>
+            <p>🍟세트 6500원~</p>
+            <button class="button1">장바구니 담기</button>
+            <button class="button2">자세히 보기</button>
+        </div>
+            <div class="box">
+                <img class="boxImg" src="/images/햄버거3.webp" alt="">
+                <p><b>한우패티 치즈 와퍼</b></p>
+                <p>🍔단품 9000원</p>
+                <p>🍟세트 11000원~</p>
+                <button class="button1">장바구니 담기</button>
+                 <button class="button2">자세히 보기</button>
+            </div>
+            <div class="box">
+                <img  class="boxImg" src="/images/햄버거4.avif" alt="">
+                <p><b>쿼터 치즈폭탄 와퍼</b></p>
+                <p>🍔단품 7500원</p>
+                <p>🍟세트 9500원~</p>
+                <button class="button1">장바구니 담기</button>
+                <button class="button2">자세히 보기</button>
+            </div>
+            <div class="box">
+                <img class="boxImg" src="/images/햄버거5.png" alt="">
+                <p><b>베이컨 체다치즈 와퍼</b></p>
+                <p>🍔단품 7000원</p>
+                <p>🍟세트 9000원~</p>
+                <button class="button1">장바구니 담기</button>
+                 <button class="button2">자세히 보기</button>
+            </div>
+            <div class="box">
+                <img class="boxImg" src="/images/햄버거6.avif" alt="">
+                <p><b>시그니처 와퍼</b></p>
+                <p>🍔단품 8500원</p>
+                <p>🍟세트 10500원~ </p>
+                <button class="button1">장바구니 담기</button>
+                <button class="button2">자세히 보기</button>
+            </div>
+            <div class="box">
+                <img class="boxImg" src="/images/치킨1.webp" alt="">
+                <p><b>후라이드 치킨</b></p>
+                <p><s>17000원</s></p>
+                <p style="color: rgb(255, 110, 110);"><b>Sale -> 16000원</b></p>
+                <button class="button1">장바구니 담기</button>
+                <button class="button2">자세히 보기</button>
+            </div>
+            <div class="box">
+                <img class="boxImg" src="/images/치킨2.png" alt="">
+                <p><b>후라이드 반 양념 반</b></p>
+                <p><s>18000원</s></p>
+                <p style="color: rgb(255, 99, 99);"><b>Sale -> 17000원</b></p>
+                <button class="button1">장바구니 담기</button>
+                <button class="button2">자세히 보기</button>
+            </div>
+            </section>
+            <aside class="aside1">
+                <img src="/images/세로배너3.webp" alt="" width="300px">
+            </aside>
+
+    </div>
+
+</body>
+<footer>
+    <div class="inner">
+            <div class="up">
+                <ul class="footer1">
+                    <li><a href="/DAY_0701/10_event.html" >회사소개</li>
+                    <li><a href="/DAY_0701/17_baduk.html">서비스이용약관</a></li>
+                    <li><a href="/DAY_0701/07_imporrtant.html" id="gain">개인정보 처리방침</a></li>
+                </ul>
+                <ul class="footer2">
+                    <li><a href="/DAY_0701/10_event.html">kimNoah Company</a></li>
+                    <li><a href="/DAY_0701/17_baduk.html">대표자: 김노아</a></li>
+                    
+                </ul>
+                 <ul class="footer3">
+                   
+                    <li><a href="/DAY_0701/07_imporrtant.html" id="gain">인천광역시 남동구 석산로 216번길</a></li>
+                    <li><a href="/DAY_0701/07_imporrtant.html" id="gain">영업시간 : 09:00-21:00 연중무휴</a></li>
+                    <li><a href="/DAY_0701/07_imporrtant.html" id="gain"> &copy; Copyright by NOAH. All rights reserved</a></li>
+                </ul>
+            </div>
+       
+        </div>
+        </div>
+
+</footer>
+</html>
